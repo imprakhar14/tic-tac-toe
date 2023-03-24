@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tic_tac_toe_style.css" />
+    <title>Tic tac toe</title>
+  </head>
+
+  <body>
+    <!-- mobile view start -->
+    <div class="player-mobile-view-box">
+      <div class="player2-container score-container">
+        <div class="avatar-container">
+          <img src="gamer-avatar.png" alt="" srcset="" class="avatar-image" />
+        </div>
+
+        <div class="player-info">
+          <h1>PLAYER 1</h1>
+          <h3>wins</h3>
+          <h3>loses</h3>
+        </div>
+      </div>
+      <div class="player2-container score-container">
+        <div class="avatar-container">
+          <img src="gamer-avatar.png" alt="" srcset="" class="avatar-image" />
+        </div>
+
+        <div class="player-info">
+          <h1>PLAYER 2</h1>
+
+          <h3>wins</h3>
+          <h3>loses</h3>
+        </div>
+      </div>
+    </div>
+    <!-- mobile view end -->
+
+    <div class="container" id="container">
+      <!-- player 1 container starts here -->
+
+      <div class="player-container desktop-view">
+        <div class="player1-container score-container">
+          <div class="avatar-container">
+            <img src="gamer-avatar.png" alt="" srcset="" class="avatar-image" />
+          </div>
+          <div class="player-info">
+            <h1>PLAYER X</h1>
+            <h3 class="player1-wins">WINS</h3>
+            <h3 class="player1-loses">LOSES</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- player 1 container ends here -->
+      <!--game box starst here  -->
+
+      <div class="body">
+        <div class="game_container">
+          <span class="turn"></span>
+          <div class="game">
+            <input maxlength="1" index="0" class="box" />
+            <input maxlength="1" index="1" class="box" />
+            <input maxlength="1" index="2" class="box" />
+            <input maxlength="1" index="3" class="box" />
+            <input maxlength="1" index="4" class="box" />
+            <input maxlength="1" index="5" class="box" />
+            <input maxlength="1" index="6" class="box" />
+            <input maxlength="1" index="7" class="box" />
+            <input maxlength="1" index="8" class="box" />
+          </div>
+        </div>
+
+        <button class="btn reset" onclick="restartGame()">Restart</button>
+      </div>
+
+      <!-- player 2 container starts here -->
+
+      <div class="player-container desktop-view">
+        <div class="player2-container score-container">
+          <div class="avatar-container">
+            <img src="gamer-avatar.png" alt="" srcset="" class="avatar-image" />
+          </div>
+
+          <div class="player-info">
+            <h1>PLAYER O</h1>
+            <h3 class="player2-wins">WINS</h3>
+            <h3 class="player2-loses">LOSES</h3>
+          </div>
+        </div>
+      </div>
+      <!-- player 2 container ends here -->
+    </div>
+    <!-- game box ends here -->
+
+    <!-- <div class="start-screen" id="abc">
+      <h1>Welcome to tic tac toe</h1>
+      <img src="welcomescreen.png" width="50%" alt="" srcset="" />
+      <button class="btn game-start" onclick="main()">Start</button>
+    </div> -->
+    <div class="popup-container">
+      <div class="popup">
+        <h1 class="winning-popup-msg">Player won</h1>
+        <button class="btn" onclick="restartGame()">Close</button>
+      </div>
+    </div>
+    <!-- <div class="player-form-container">
+      <input type="text" name="" id="player1-name">
+      <input type="text" name="" id="player2-name">
+    </div> -->
+    <script src="tic_tac_toe_script.js"></script>
+    <!-- <script src="dup.js"></script> -->
+  </body>
+
+</html>
